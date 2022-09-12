@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cheat sheet: Arryer og Objecter</title>
+</head>
+<body>
+
+    <script>
+        const handleliste = ["brød", "sjokolade", "egg", "melk", "ost", "pølse"]
+        console.log(handleliste)
+
+        const antallVarer = handleliste.length
+        console.log("Handlelisten inneholder " + antallVarer + " varer")
+
+        const vare2 = handleliste[1]
+        console.log ("varen på rad 2 i handlelisten er " + vare2)
+
+        const index = 3
+        const indexVare = handleliste[index]
+        console.log(`varen på rad ${index + 1} i handlelisten er ${indexVare}`)
+
+        //sortere alfabetisk
+        handleliste.sort()
+        handleliste.reverse()
+        console.log(handleliste)
+
+        handleliste.push("pølsebrød", "ketchup")
+        console.log(handleliste)
+
+        handleliste.unshift("sprøstekt løk")
+        console.log(handleliste)
+    </script>
+</body>
+</html>
